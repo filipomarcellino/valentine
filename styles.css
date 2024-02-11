@@ -1,0 +1,78 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contentDiv {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  display: none; /* Initially hidden */
+}
+
+#yesNoDiv {
+  display: flex;
+}
+
+#question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc0cb; /* Light pink background, reminiscent of Barbie */
+  color: #ff69b4; /* Hot pink text color */
+  font-family: "Brush Script MT", cursive; /* Cursive font for a playful look */
+  font-size: 50px; /* Larger font size for emphasis */
+  padding: 20px; /* Padding for space around the text */
+  border: 2px solid #ff69b4; /* Hot pink border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5); /* Soft pink shadow for depth */
+  text-shadow: 1px 1px 2px #ffb6c1; /* Light pink text shadow for a glowing effect */
+  margin: 20px; /* Margin to ensure it doesn't touch the edges of its container */
+  width: fit-content; /* Ensure the width fits the content with some padding */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#question:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover for interactivity */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Brush Script MT", cursive;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yes {
+  background-color: #ff69b4; /* Hot pink for "Yes!" button */
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5);
+}
+
+#yes:hover {
+  background-color: #ff1493; /* Deeper pink on hover */
+  transform: scale(1.1);
+}
+
+#no {
+  background-color: #ffb6c1; /* Light pink for "No!" button */
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5);
+}
+
+#no:hover {
+  background-color: #ffc0cb; /* Softer pink on hover */
+  transform: scale(1.1);
+}
+
+#catgif {
+  display: none;
+}
